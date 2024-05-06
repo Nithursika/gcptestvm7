@@ -1,0 +1,8 @@
+config:
+  GCPtestVM7:instanceTag: webserver
+  GCPtestVM7:machineType: f1-micro
+  GCPtestVM7:osImage: debian-11
+  GCPtestVM7:servicePort: "80"
+  gcp:project: prj-dev-platform-next
+  gcp:region: us-central1
+  gcp:zone: us-central1-a

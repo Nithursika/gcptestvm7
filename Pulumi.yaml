@@ -1,0 +1,7 @@
+name: GCPtestVM7
+runtime: nodejs
+description: created by template
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: vm-gcp-typescript

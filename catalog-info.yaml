@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: GCPtestVM7
+  description: The virtual machine for the dev
+  links:
+  - title: Pulumi Console
+    url: https://app.pulumi.com/nithursika/GCPtestVM7/dev
+spec:
+  type: virtual-machine
+  owner: "group:default/guests"
+  lifecycle: experimental
+  system: system:default/examples
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: GCPtestVM7
+  description: "created by template"
+  annotations:
+    github.com/project-slug: nithu/gcptestvm7
+    pulumi.com/project-slug: nithursika/GCPtestVM7/dev
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/guests"
+  system: system:default/examples
+  dependsOn:
+  - resource:default/GCPtestVM7
